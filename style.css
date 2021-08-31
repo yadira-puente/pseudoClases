@@ -2,3 +2,10 @@
 a:active {
      color: red;
      } 
+     
+/*Aqui estoy realizando first:child*/
+p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
