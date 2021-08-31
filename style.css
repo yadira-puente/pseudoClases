@@ -9,3 +9,8 @@ p:first-child {
     background-color: black;
     padding: 5px;
   }
+  /*Aquí estoy realizando :first-of-type*/
+  p:first-of-type {
+    color: blue;
+    font-style: italic;
+  }
