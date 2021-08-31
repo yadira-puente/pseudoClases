@@ -21,6 +21,14 @@ p:first-child {
   }
   
   .blue-input:focus {
-    background: yellow;
+    background: rgb(0, 255, 34);
     color: grey;
   }
+   /*Aqui estoy realizando el ejemplo :hover*/
+   a {
+    background-color: #d4d2dd;
+    transition: backgroud-color .5s;
+   }
+   a:hover {
+     background-color: rgb(223, 128, 191);
+   }
