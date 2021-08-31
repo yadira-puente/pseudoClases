@@ -5,12 +5,22 @@ a:active {
      
 /*Aqui estoy realizando first:child*/
 p:first-child {
-    color: lime;
-    background-color: black;
+    color: rgb(213, 216, 213);
+    background-color: yellow;
     padding: 5px;
   }
   /*Aquí estoy realizando :first-of-type*/
   p:first-of-type {
     color: blue;
     font-style: italic;
+  }
+  /*Aqui estoy realizando el ejemplo :focus*/
+  .red-input:focus {
+    background: yellow;
+    color: violet;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: grey;
   }
