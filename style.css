@@ -1,20 +1,20 @@
-/*Aquí realice la pseudoclase active*/
+/*Aquí realice la pseudoclase active1*/
 a:active {
      color: red;
      } 
      
-/*Aqui estoy realizando first:child*/
+/*Aqui estoy realizando first:child2*/
 p:first-child {
     color: rgb(213, 216, 213);
     background-color: yellow;
     padding: 5px;
   }
-  /*Aquí estoy realizando :first-of-type*/
+  /*Aquí estoy realizando :first-of-type3*/
   p:first-of-type {
     color: blue;
     font-style: italic;
   }
-  /*Aqui estoy realizando el ejemplo :focus*/
+  /*Aqui estoy realizando el ejemplo :focus4*/
   .red-input:focus {
     background: yellow;
     color: violet;
@@ -24,7 +24,7 @@ p:first-child {
     background: rgb(0, 255, 34);
     color: grey;
   }
-   /*Aqui estoy realizando el ejemplo :hover*/
+   /*Aqui estoy realizando el ejemplo :hover5*/
    a {
     background-color: #d4d2dd;
     transition: backgroud-color .5s;
@@ -32,3 +32,11 @@ p:first-child {
    a:hover {
      background-color: rgb(223, 128, 191);
    }
+   /*enabled*/
+   input:enabled {
+    color: rgb(187, 34, 141);
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
