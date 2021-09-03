@@ -9,9 +9,11 @@
 </head>
 <body>
     <!-- a:active-->
+    <p>Aqui practico la pseudoclase active</p><br>
     <a href="#">Este enlace cambiará a color rojo mientras hace clic en él.</a>
     <!-- p:first-child-->
     <div>
+        <p>Aqui practico la pseudoclase first-child</p><br>
         <p>Aqui revisando que funcione</p>
         <p>¡Este texto está seleccionado!</p>
         <p>Este texto no está seleccionado.</p>
@@ -22,12 +24,15 @@
         <p>Este texto no está seleccionado.</p>
     </div>
     <!--Aquí estoy realizando :first-of-type-->
-    <h2>Encabezado</h2>
+    <p>Aqui practico la pseudoclase first-of-type</p>
+
+    <h2>Encabezado</h2>        
         <p>Este es el ejemplo 1</p>
         <p>Este el ejemplo 2 </p> 
     <!--Aquí estoy realizando :first-of-type   
     div:-webkit-full-screen {
             background-color: pink;
+
           }-->
     <!--:focus-->
     <input class="red-input" value="Voy a ser de color violeta cuando enfoque."><br><br>
@@ -36,6 +41,7 @@
     <br><br>
     <a href="#">Esto es una prueba intenta pasar por el enlace.</a><br><br>
     <!--:enabled-->
+    <p>Aqui estoy realizando el ejemplo enabled--</p>
     <form action="url_of_form">
         <label for="FirstField">Campo 1 (habilitado):</label>
         <input type="text" id="FirstField" value="Prueba"><br><br>
@@ -44,5 +50,7 @@
         <input type="text" id="SecondField" value="Prueba2" disabled="disabled"><br><br>
         <input type="button" value="Enviar">
       </form>
+      <p>Aqui estoy realizando el ejemplo :lang--</p>
+      <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
 </body>
 </html>

@@ -32,7 +32,7 @@ p:first-child {
    a:hover {
      background-color: rgb(223, 128, 191);
    }
-   /*enabled*/
+   /*enabled6*/
    input:enabled {
     color: rgb(187, 34, 141);
   }
@@ -40,3 +40,7 @@ p:first-child {
   input:disabled {
     color: #aaa;
   }
+  /*lang*/
+  :lang(en) > q {
+     quotes: '« ' ' »';
+     }
