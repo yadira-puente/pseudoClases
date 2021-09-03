@@ -67,3 +67,7 @@ p:first-child {
       font: medium;
 
     }
+    /*nth-last-of-type*/
+    span:nth-last-of-type(2) {
+      background-color: lime;
+    }
