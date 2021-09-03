@@ -35,12 +35,14 @@
 
           }-->
     <!--:focus-->
+    <hr>
     <input class="red-input" value="Voy a ser de color violeta cuando enfoque."><br><br>
     <input class="blue-input" value="Voy a ser de color gris cuando enfoque.">    
     <!--:hover-->  
     <br><br>
     <a href="#">Esto es una prueba intenta pasar por el enlace.</a><br><br>
     <!--:enabled-->
+    <hr>
     <p>Aqui estoy realizando el ejemplo enabled--</p>
     <form action="url_of_form">
         <label for="FirstField">Campo 1 (habilitado):</label>
@@ -50,7 +52,20 @@
         <input type="text" id="SecondField" value="Prueba2" disabled="disabled"><br><br>
         <input type="button" value="Enviar">
       </form>
+      <hr>
       <p>Aqui estoy realizando el ejemplo :lang--</p>
       <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+      <hr>
+      <p>Aqui estoy realizando el ejemplo list:child</p>
+      
+      <div>
+        <p>Este texto no está seleccionado.</p>
+        <p>¡Este texto está seleccionado!</p>
+      </div>
+      
+      <div>
+        <p>Este texto no está seleccionado.</p>
+        <h2>Este texto no está seleccionado: no es un `p`.</h2>
+      </div>
 </body>
 </html>
