@@ -71,7 +71,7 @@ p:first-child {
     span:nth-last-of-type(2) {
       background-color: lime;
     }
-    /*Check*/
+    /*Check11*/
     div,
 select {
   margin: 8px;
@@ -97,3 +97,10 @@ option:checked {
   box-shadow: 0 0 0 3px lime;
   color: red;
 }
+/*:default12*/
+input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+
+input:default + label {git add
+  color: coral;
