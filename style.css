@@ -333,3 +333,11 @@ input:read-only { background: cyan; }
 p:-moz-read-only { background: lightgray; }
 p:read-only { background: lightgray; }
 p[contenteditable="true"] { color: blue; }
+/*read write*/
+input { min-width: 25em; }
+input:-moz-read-write { background: cyan; }
+input:read-write { background: cyan; }
+
+p:-moz-read-write { background: lightgray; }
+p:read-write { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
