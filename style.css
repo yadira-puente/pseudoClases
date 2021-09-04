@@ -63,11 +63,37 @@ p:first-child {
     }
     /*last-of-type 9*/
     p:last-of-type{
-      color: lightblue ;
+      color: rgb(3, 10, 12) ;
       font: medium;
 
     }
-    /*nth-last-of-type*/
+    /*nth-last-of-type10*/
     span:nth-last-of-type(2) {
       background-color: lime;
     }
+    /*Check*/
+    div,
+select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
