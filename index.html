@@ -326,5 +326,27 @@
         <span>Yo también tengo hermanos, <span>pero este es un hijo único.</span></span>
       </div>
     </main>
+    <main>
+      <hr>
+      <h2>Pseudoelemento only-of-type</h2>
+      <div>Soy un `div` #1.</div>
+      <p>Yo soy el único `p` entre mis hermanos.</p>
+      <div>Soy un `div` #2.</div>
+      <div>Soy un `div` #3.
+        <i>Yo soy el único hijo `i`.</i>
+        <em>Soy un `em` #1.</em>
+        <em>Soy un `em` #2.</em>
+      </div>
+    </main>
+    <hr>
+    <h2>Pseudoclase out-of-range</h2>
+    <form action="" id="form1">
+      <ul>Los valores entre 1 y 10 son válidos.
+        <li>
+          <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+          <label for="value1">Tu valor esta </label>
+        </li>
+      </ul>
+    </form>
 </body>
 </html>
