@@ -12,3 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
       billingItems[i].disabled = !billingItems[i].disabled;
     }
   }
+  document.querySelector("button").onclick = function () {
+    window.print();
+  }

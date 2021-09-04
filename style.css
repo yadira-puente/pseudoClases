@@ -126,3 +126,12 @@ input:default + label {
 input[type="text"]:disabled {
   background: #ccc;
 }
+/*first*/
+@page :first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+p {
+  page-break-after: always;
+}
