@@ -136,6 +136,27 @@
       <div class="box">
           <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
       </div>
+      <hr>
+      <h2>Aqui estoy realizando el ejemplo disabled </h2>
+      <p>Mi ejemplo para entender como funciona</p>
+      <form action="#">
+        <fieldset id="shipping">
+          <legend>Dirección de Envío</legend>
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Dirección">
+          <input type="text" placeholder="Código postal">
+        </fieldset>
+        <br>
+        <fieldset id="billing">
+          <legend>Dirección de facturación</legend>
+          <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+          <input type="checkbox" id="billing-checkbox" checked>
+          <br>
+          <input type="text" placeholder="Nombre" disabled>
+          <input type="text" placeholder="Dirección" disabled>
+          <input type="text" placeholder="Código postal" disabled>
+        </fieldset>
+      </form>
       
 </body>
 </html>
