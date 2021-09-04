@@ -135,3 +135,26 @@ input[type="text"]:disabled {
 p {
   page-break-after: always;
 }
+/*fullscreen*/
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border:2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:fullscreen > h1 {
+  color: red;
+}
+
+#fullscreen:fullscreen > p {
+  color: darkred;
+}
+
+#fullscreen:fullscreen > button {
+  display: none;
+}
+/*inderminate*/
+input:indeterminate + label {
+  background: lime;
+}
