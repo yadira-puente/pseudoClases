@@ -20,3 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 for (var i = 0; i < inputs.length; i++) {
   inputs[i].indeterminate = true;
 }
+let paragraph = document.getElementById("para");
+let output = document.getElementById("output");
+
+if (paragraph.matches(":scope")) {
+  output.innerText = "Yep, the element is its own scope as expected!";
+}
