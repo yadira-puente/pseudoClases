@@ -104,7 +104,7 @@ input:default {
 
 input:default + label {
   color: coral;
-  /*()dir */
+  /*()dir13 */
   :dir(ltr) {
     background-color: yellow;
   }
@@ -112,3 +112,14 @@ input:default + label {
   :dir(rtl) {
     background-color: powderblue;
   }
+  /*empty*/
+  .box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+  }
+  
+  .box:empty {
+    background: lime;
+  }
+  
