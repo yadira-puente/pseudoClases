@@ -256,3 +256,22 @@ div em {
 .third span:nth-of-type(2n+1) {
   background-color: lime;
 }
+/*nth-last-child*/
+table {
+  border: 1px solid blue;
+}
+
+/* Selecciona los últimos tres elementos */
+tr:nth-last-child(-n+3) {
+  background-color: pink;
+}
+
+/* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+  color: blue;
+}
+
+/* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+  font-weight: 600;
+}
