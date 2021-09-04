@@ -341,3 +341,6 @@ input:read-write { background: cyan; }
 p:-moz-read-write { background: lightgray; }
 p:read-write { background: lightgray; }
 p[contenteditable="true"] { color: blue; }
+@page :right {
+  margin: 2in 3in;
+}
