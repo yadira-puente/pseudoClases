@@ -350,3 +350,33 @@ p[contenteditable="true"] { color: blue; }
 @page :right {
   margin: 2in 3in;
 }
+/*target*/
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: .25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: red;
+}
+/*:visited*/
+a {
+  /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+     lo que les permite ser diseñado con el estado :visited */
+  background-color: white;
+  border: 1px solid white;
+}
+
+a:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}
