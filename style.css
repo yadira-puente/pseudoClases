@@ -4,7 +4,9 @@
 	padding: 0;
     box-sizing: border-box;
 }
-:root {
+/*root*/
+:root 
+{
   --main-color: hotpink;
   --pane-padding: 5px 42px;
 }
@@ -339,14 +341,10 @@ input:read-only { background: cyan; }
 p:-moz-read-only { background: lightgray; }
 p:read-only { background: lightgray; }
 p[contenteditable="true"] { color: blue; }
-/*read write*/
-input { min-width: 25em; }
-input:-moz-read-write { background: cyan; }
-input:read-write { background: cyan; }
 
-p:-moz-read-write { background: lightgray; }
-p:read-write { background: lightgray; }
-p[contenteditable="true"] { color: blue; }
+
+
+/*right*/
 @page :right {
   margin: 2in 3in;
 }
@@ -380,3 +378,70 @@ a:visited {
   border-color: hotpink;
   color: hotpink;
 }
+/*:optional*/
+input:optional {
+  border: 1px dashed black;
+  border-width: 3px;
+}
+/*required*/
+label {
+  display: block;
+  margin: 1px;
+  padding: 1px;
+}
+
+.field {
+  margin: 1px;
+  padding: 1px;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #c00000;
+}
+/*:valid*/
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #C00000;
+}
+/*read-write*/
+input:-moz-read-write {
+  background-color: #bbf;
+}
+
+/* Compatible con Blink/WebKit/Edge sin un prefijo */
+input:read-write {
+  background-color: #bbf;
+}
+/*read write*/
+input { min-width: 25em; }
+input:-moz-read-write { background: cyan; }
+input:read-write { background: cyan; }
+
+p:-moz-read-write { background: lightgray; }
+p:read-write { background: lightgray; }
+p[contenteditable="true"] { color: blue; }

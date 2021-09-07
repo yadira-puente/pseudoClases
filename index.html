@@ -72,7 +72,7 @@
         <p>Este texto no está seleccionado.</p>
         <h2>Este texto no está seleccionado: no es un `p`.</h2>
         <hr>
-        <h2>Aqui estoy realizando el ejemplo <last-of-type></last-type></h2>
+        <h2>Aqui estoy realizando el ejemplo <last-of-type></h2>
         <p>Mi ejemplo para entender como funciona</p>
         <p>En esta segunda línea se va a aplicar la funcion last-of-type</p>
       </div>
@@ -94,7 +94,7 @@
             <span>Aquí hay un último span.</span>
           </div>
         <hr>
-        <h2>Aqui estoy realizando el ejemplo Check </h2>
+        <h2>Aqui estoy realizando el ejemplo :checked </h2>
         <p>Mi ejemplo para entender como funciona</p>
           <div>
             <input type="radio" name="my-input" id="yes">
@@ -135,7 +135,7 @@
           </div>
         </div>
       <hr>
-      <h2>Aqui estoy realizando el ejemplo default </h2>
+      <h2>Aqui estoy realizando el ejemplo empty </h2>
       <p>Mi ejemplo para entender como funciona</p>
       <div class="box"><!-- Voy a ser de color lima. --></div>
       <div class="box">Voy a ser de color rosa.</div>
@@ -263,15 +263,14 @@
      <span>Span</span>
    </div>
    
-   <br>
-   
-   <h3><code>span:nth-of-type(2n+1)</code>, CON un
+    <br>
+    <h3><code>span:nth-of-type(2n+1)</code>, CON un
       <code>&lt;em&gt;</code> entre los hijos.</h3>
-   <p>Los hijos 1, 4, 6 y 8 son seleccionados.<br>
+    <p>Los hijos 1, 4, 6 y 8 son seleccionados.<br>
       3 no se usa en el conteo ni se selecciona porque es un <code>&lt;em&gt;</code>,
       no un <code>&lt;span&gt;</code>, y <code>nth-of-type</code> solo selecciona
       hijos de ese tipo. El <code>&lt;em&gt;</code> se omite por completo y se ignora.</p>
-   <div class="third">
+    <div class="third">
      <span>Span!</span>
      <span>Span</span>
      <em>Este es un `em`.</em>
@@ -280,11 +279,11 @@
      <span>Span!</span>
      <span>Span</span>
      <span>Span!</span>
-   </div>
-   <hr>
-      <h2>Aqui estoy realizando el ejemplo nth-last-child </h2>
-      <p>Mi ejemplo para entender como funciona</p><br>
-   <table>
+    </div>
+    <hr>
+     <h2>Aqui estoy realizando el ejemplo nth-last-child </h2>
+     <p>Mi ejemplo para entender como funciona</p><br>
+    <table>
     <tbody>
       <tr>
         <td>Primera línea</td>
@@ -295,16 +294,16 @@
       <tr>
         <td>Tercera línea</td>
       </tr>
-      <tr>
+       <tr>
         <td>Cuarta línea</td>
       </tr>
       <tr>
         <td>Quinta línea</td>
       </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h2>pseudoclase nth-of-type </h2>
+      </tbody>
+      </table>
+    <hr>
+    <h2>pseudoclase nth-of-type </h2>
     <div>
       <div>Este elemento no se cuenta.</div>
       <p>1er párrafo.</p>
@@ -327,10 +326,10 @@
       </div>
     </main>
     <main>
-      <hr>
-      <h2>Pseudoclase only-of-type</h2>
-      <div>Soy un `div` #1.</div>
-      <p>Yo soy el único `p` entre mis hermanos.</p>
+    <hr>
+    <h2>Pseudoclase only-of-type</h2>
+    <div>Soy un `div` #1.</div>
+    <p>Yo soy el único `p` entre mis hermanos.</p>
       <div>Soy un `div` #2.</div>
       <div>Soy un `div` #3.
         <i>Yo soy el único hijo `i`.</i>
@@ -349,9 +348,9 @@
       </ul>
     </form>
     <hr>
-    <h2>Pseudoclase :read-only</h2>
-    <input type="text" value="Aquí puedes poner lo que quieras.">
-    <input type="text" value="Campo de solo lectura." readonly>
+    <h2>Pseudoclase :read-only </h2>
+    <input type="text" value="Aquí puedes poner lo que quieras." >
+    <input type="text" value="Campo de solo lectura." readonly>  
     <p>Este es un párrafo normal.</p>
     <p contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
     <hr>
@@ -379,5 +378,38 @@
     <h2>Pseudoclase :visited</h2>
     <a href="#test-visited-link">¿Ya has visitado este enlace?</a><br>
     <a href="">Ya has visitado este enlace.</a>
+    <hr>
+    <h2>Este es el ejemplo required</h2>
+    <form>
+      <div class="field">
+        <label for="url_input">Enter a URL:</label>
+        <input type="url" id="url_input">
+      </div>
+      <div class="field">
+        <label for="email_input">Enter an email address:</label>
+        <input type="email" id="email_input" required>
+      </div>
+    </form>
+    <hr>
+    <h2>Pseudoclase :valid</h2>
+    <form>
+      <label for="url_input">Ingresa una URL:</label>
+      <input type="url" id="url_input" />
+      <br />
+      <br />
+      <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+      <input type="email" id="email_input" required/>
+    </form>
+    <hr><h2>Pseudoclase :optional</h2>
+    <input type="text" value="Aquí puedes poner lo que quieras." required>
+    <input type="text" value="Campo de solo lectura." readonly>  
+    <p>Este es un párrafo normal.</p>
+    <p contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
+    <hr>
+    <h2>Pseudoclase read write</h2>
+    <input type="text" value="Escribe lo que quieras aquí.">
+    <input type="text" value="Este es un campo de solo lectura." readonly>
+    <p>Este es un párrafo normal.</p>
+    <p contenteditable="true">¡Puedes editar este párrafo!</p>
 </body>
 </html>
